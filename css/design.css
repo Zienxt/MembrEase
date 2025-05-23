@@ -1,6 +1,7 @@
 /*
 
-#2E2C2F
+hi mom
+
 */
 
 body{
@@ -68,11 +69,11 @@ button:hover{
 }
 
 .pin input, .password input{
-    border: solid 1px #07665340;
+    border: solid 1px #27585340;
 }
 
 .pin input:focus, .password input:focus{
-    border: solid 1px #076653;
+    border: solid 1px #27585390;
     outline: none;
 }
 
@@ -90,7 +91,7 @@ button:hover{
 }
 
 .remember-me input{
-    accent-color: #076653 ;
+    accent-color: #3C8A82 ;
     height: 20px;
     width: 20px;
     margin-right: 8px;
@@ -99,8 +100,8 @@ button:hover{
 }
 
 .remember-me input:checked{
-    background-color: #076653;
-    border-color: #076653;
+    background-color: #3C8A82;
+    border-color: #3C8A82;
 }
 
 .forgot-password{
@@ -109,7 +110,7 @@ button:hover{
 
 .forgot-password a {
     text-decoration: none;
-    color: #076653;
+    color: #3C8A82;
 }
 
 .log-in, .register{
@@ -120,25 +121,25 @@ button:hover{
 }
 
 .log-in{
-    background-color: #076653;
+    background-color: #3C8A82;
     margin-bottom: 3.75rem;
     color: #ffffff;
     transition: all 0.2s ease-in-out;
 }
 
 .log-in:hover{
-    background-color: #088169;
+    background-color: #275853;
 }
 
 .log-in:active{
-    background-color: #0ba485;
+    background-color: #3C8A82;
     transform: scale(0.99);
 }
 
 .register{
-    border: #076653 solid 2px;
+    border: #3C8A82 solid 2px;
     background-color: #ffffff;
-    color: #076653;
+    color: #3C8A82;
     transition: all 0.2s ease-in-out;
 }
 
