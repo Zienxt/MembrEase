@@ -4,6 +4,11 @@ body{
     font-family: Montserrat, Roboto, Poppins
 }
 
+a{
+    text-decoration: none;
+    font-style: normal;
+}
+
 button:hover{
     cursor: pointer;
 }
@@ -97,10 +102,9 @@ button:hover{
     font-size: 12px;
 }
 
-
 .main{
     display: grid;
-    grid-template-columns: 18% 1fr;
+    grid-template-columns: 21% 1fr;
     height: 100%;
 }
 
@@ -125,6 +129,7 @@ button:hover{
     font-size: 16px;
     font-weight: 500;
     border-top: solid 1px #275853;
+    position: relative;
 }
 
 .sidebar-tools div{
@@ -142,30 +147,58 @@ button:hover{
     margin: 12px;
 }
 
-.sidebar-tools div:hover{
-    background-color: #275853;
-    color: #ffffff;
+/* this */
+/* General hover effect */
+.sidebar-tools div:hover {
+    background-color: #E6F4EC;
+    color: #275853;
+}
+
+.sidebar-tools .content-panel.active:hover {
+    background-color: #275853; 
+    color: #ffffff;            
+    cursor: default;         
 }
 
 .sidebar-tools svg path {
     fill: #275853;
     transition: fill 0.2s ease-in-out;
-  }
-  
-  .sidebar-tools div:hover svg path {
-    fill: #ffffff;
-  }
-  
+}
 
-.sidebar-tools svg:hover{
+.sidebar-tools div:hover svg path {
+    fill: #275853;
+}
+
+.content-panel.active,
+.sidebar-tools svg:active {
+    background-color: #275853;
+    color: #FFFFFF;
+}
+
+.sidebar-tools .content-panel.active svg path {
     fill: #ffffff;
 }
 
-.about-logout{
+.sidebar-tools .content-panel.active:hover svg path {
+    fill: #ffffff;
+}
+
+.about-out{
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: start;
+    position: absolute;
+    bottom: 3rem;
+    left: 3rem;
+}
+
+.about-out div:hover{
+    text-decoration: underline;
+    color: #275853;
+    cursor: pointer;
+}
+
+.about-us{
+    margin-bottom: 2rem;
 }
 
 .dashboard {
@@ -175,7 +208,6 @@ button:hover{
     flex-direction: column;
     padding: 1rem 2rem;
   }
-  
 
 .section-1{
     display: flex;
@@ -199,7 +231,6 @@ button:hover{
     border: none;
     border-radius: 12px;
     transition: all 0.1s ease-in-out;
-
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.115);
 
 }
@@ -212,7 +243,6 @@ button:hover{
     background-color: #275853;
     color: #ffffff;
 }
-
 
 .section-2{
     display: grid;
@@ -261,7 +291,6 @@ button:hover{
     height: auto;
 }
 
-
 .section-4{
     display: flex;
     flex-direction: column;
@@ -275,9 +304,7 @@ button:hover{
     overflow: hidden;
     color: #275853;
     margin-bottom: 1rem;
-
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.115);
-
 }
 
 .update-information-list{
@@ -313,4 +340,104 @@ button:hover{
     padding-bottom: 16px;
     margin-bottom: 16px;
     border-bottom: solid 1px #27585390;
+}
+
+.custom-date {
+    outline: none;
+    cursor: pointer;
+    font-family: Montserrat, Poppins, Roboto;
+  }
+  
+  .custom-date:focus {
+    border-color: #275853;
+    color: #275853;
+  }
+  
+  input[type="date"] {
+    color: #275853; /* text color */
+  }
+
+  input[type="file"] {
+    font-family: Montserrat, Poppins, Roboto;
+    color: #275853;
+  }
+  
+  
+  input[type="file"] {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    padding: 6px;
+    border-radius: 5px;
+  }
+
+  /*------------------------------------------------------------------------*/
+
+.homepage{
+    width: 240px;
+    height: 55px;
+    background-color: #ffffff;
+    color: #275853;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    transition: all 0.1s ease-in-out;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.115);
+  }
+
+.homepage:hover{
+    background-color: #ffffff99;
+}
+
+.homepage:active{
+    background-color: #ffffff95;
+}
+
+.about-us-parent{
+    padding: 4rem 8rem;
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6rem;
+}
+
+.about-section-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #275853;
+    font-weight: bold;
+}
+
+.about-title{
+    font-size: 64px;
+    margin-bottom: 46px;
+}
+
+.about-text{
+    font-size: 20px;
+}
+
+.about-section-2{
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-cards-parent-1{
+    display: flex;
+}
+
+.card{
+    background-color: lightpink;   
+}
+
+.about-cards-parent-1{
+    display: flex;
+    background-color: #3C8A82;
 }
